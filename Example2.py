@@ -4,13 +4,14 @@
 
 import random
 
-number = [random.randint(1,30) for i in range(1,random.randint(5,10))]
+number = [random.randint(1,30) for i in range(1,random.randint(5,20))]
 print(number)
 i=1
-count = 0
+count = random.randint(0, len(number))
+print(count)
 res = []
-res.append(number[0])
-for i in range(1,len(number)):
+res.append(number[count])
+for i in range(count,len(number)):
     if number[count]< number[i]:
         res.append(number[i])
         count = i
