@@ -15,5 +15,4 @@
 import random
 number = [random.randint(1,11) for i in range(10)]
 print(number)
-result = list(filter(lambda x: (x>5),number))
-print(result)
+print(list(filter(lambda x: (x>5),number)))
